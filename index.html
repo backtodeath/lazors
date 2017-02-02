@@ -1,18 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
+<title>Spy Chase</title>
+<meta charset=utf-8>
 <meta name="viewport" content="width=device-width, user-scalable=no" />
-<meta name="apple-mobile-web-app-capable" content="no" />
-<title>Lazors</title>
-
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-<script src="js/app.js"></script>
+<script src="js/classlib.js"></script>
+<script src="js/resources.js"></script>
+<script src="js/data.js"></script>
+<script src="js/game.js"></script>
 </head>
-<body onload="init()" onorientationchange="orentationChanged()">
-	<h1 id="test">Lazors</h1>
-	<a id="menuBtn" href="javascript: showMenu();">Menu</a>
-	<div id="menu"></div>
+<body onload="init();">
+	<div id="container">
+		<canvas></canvas>
+	</div>
+	<div id="helper">
+		How to play: 
+		<br>Destroy cars, get nitro and health points.
+		<br>Finally catch the spy
+	</div>
 </body>
 </html>
