@@ -1,6 +1,6 @@
 window.scrollTo(0, 1);
-var gameW = 320;
-var gameH = 417;
+var gameW = window.innerWidth - 20;
+var gameH = window.innerHeight - 5;
 var menu;
 var menuItems;
 var canvas;
@@ -9,7 +9,7 @@ var cursorX;
 var cursorY;
 
 var levels = [
-		[ [ [ 94, 96 ], [ 263, 72 ], [ 40, 330 ], [ 273, 343 ] ],
+		[ [ [ 94, 96 ], [ 263, 122 ], [ 40, 330 ], [ 273, 343 ] ],
 				[ [ 0, 1 ], [ 0, 2 ], [ 0, 3 ], [ 1, 2 ], [ 1, 3 ], [ 2, 3 ] ] ],
 		[
 				[ [ 173, 86 ], [ 240, 305 ], [ 63, 223 ], [ 254, 111 ],
@@ -201,10 +201,11 @@ function setCharAt(str, index, chr) {
 	return str.substr(0, index) + chr + str.substr(index + 1);
 }
 function init() {
-	
 	var buttonEvent = function(e) {
 		if (e.keyName == "back") {
-			tizen.application.getCurrentApplication().exit();
+			if (confirm('Realy want to exit?')) {
+				tizen.application.getCurrentApplication().exit();
+			} 
 		}
 	}
 
