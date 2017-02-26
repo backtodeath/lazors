@@ -223,10 +223,9 @@ function init() {
 		if (saveFile.charAt(i) == "1") {
 			menuItem.style.backgroundColor = "rgba(73,255,63,0.35)";
 			menuItem.unlocked = true;
-		} else if ((saveFile.charAt(i + 1) == "1" && ((i - (Math.floor(i / 5) * 5)) % 5) !== 4)
-				|| (saveFile.charAt(i - 1) == "1" && ((i - (Math.floor(i / 5) * 5)) % 5) !== 0)
-				|| saveFile.charAt(i - 5) == "1"
-				|| saveFile.charAt(i + 5) == "1" || i == 0) {
+		} else if  ((saveFile.charAt(i + 1) == "1")
+				|| (saveFile.charAt(i - 1) == "1")
+				|| i == 0) {
 			menuItem.style.backgroundColor = "rgba(180,180,180,0.5)";
 			menuItem.unlocked = true;
 		}
@@ -331,10 +330,9 @@ function winLevel() {
 		menuItem = menuItems[i];
 		if (saveFile.charAt(i) == "1") {
 			menuItem.style.backgroundColor = "rgba(73,255,63,0.35)";
-		} else if ((saveFile.charAt(i + 1) == "1" && ((i - (Math.floor(i / 5) * 5)) % 5) !== 4)
-				|| (saveFile.charAt(i - 1) == "1" && ((i - (Math.floor(i / 5) * 5)) % 5) !== 0)
-				|| saveFile.charAt(i - 5) == "1"
-				|| saveFile.charAt(i + 5) == "1" || i == 0) {
+		} else if ((saveFile.charAt(i + 1) == "1")
+				|| (saveFile.charAt(i - 1) == "1")
+				|| i == 0) {
 			menuItem.style.backgroundColor = "rgba(180,180,180,0.5)";
 			menuItem.unlocked = true;
 		}
