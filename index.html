@@ -6,13 +6,38 @@
 <meta name="apple-mobile-web-app-capable" content="no" />
 <title>Lazors</title>
 
+<link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/app.js"></script>
+
 </head>
 <body onload="init()" onorientationchange="orentationChanged()">
 	<h1 id="test">Lazors</h1>
 	<a id="menuBtn" href="javascript: showMenu();">Menu</a>
 	<div id="menu"></div>
+	<button onclick="goApps()" class="more-apps btn btn-default">More
+		Cool Applications</button>
+
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog" id="modal-window">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">Realy want to exit?</h4>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-info" style="float: left"
+						data-dismiss="modal" onclick="goqApps()">More Apps</button>
+					<button type="button" class="btn btn-default" style="width: 30%"
+						data-dismiss="modal">Cancel</button>
+					<button type="button" class="btn btn-primary" style="width: 30%"
+						onclick="exit()">Exit</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 </html>

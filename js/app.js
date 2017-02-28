@@ -203,9 +203,7 @@ function setCharAt(str, index, chr) {
 function init() {
 	var buttonEvent = function(e) {
 		if (e.keyName == "back") {
-			if (confirm('Realy want to exit?')) {
-				tizen.application.getCurrentApplication().exit();
-			} 
+			$("#myModal").modal();
 		}
 	}
 
@@ -223,9 +221,8 @@ function init() {
 		if (saveFile.charAt(i) == "1") {
 			menuItem.style.backgroundColor = "rgba(73,255,63,0.35)";
 			menuItem.unlocked = true;
-		} else if  ((saveFile.charAt(i + 1) == "1")
-				|| (saveFile.charAt(i - 1) == "1")
-				|| i == 0) {
+		} else if ((saveFile.charAt(i + 1) == "1")
+				|| (saveFile.charAt(i - 1) == "1") || i == 0) {
 			menuItem.style.backgroundColor = "rgba(180,180,180,0.5)";
 			menuItem.unlocked = true;
 		}
@@ -331,8 +328,7 @@ function winLevel() {
 		if (saveFile.charAt(i) == "1") {
 			menuItem.style.backgroundColor = "rgba(73,255,63,0.35)";
 		} else if ((saveFile.charAt(i + 1) == "1")
-				|| (saveFile.charAt(i - 1) == "1")
-				|| i == 0) {
+				|| (saveFile.charAt(i - 1) == "1") || i == 0) {
 			menuItem.style.backgroundColor = "rgba(180,180,180,0.5)";
 			menuItem.unlocked = true;
 		}
@@ -482,19 +478,27 @@ function updateCursorPos(touch) {
 	}
 }
 function touchStart(event) {
-	updateCursorPos(event.touches[0]);
-	selectCircle();
-	moveCircle();
-	if (menu.style.display == "none") {
-		window.scrollTo(0, 1);
-		if (cursorY > 40 || cursorX < 230) {
-			event.preventDefault();
+	if ($('#myModal').hasClass('in')) {
+		return;
+	} else {
+		updateCursorPos(event.touches[0]);
+		selectCircle();
+		moveCircle();
+		if (menu.style.display == "none") {
+			window.scrollTo(0, 1);
+			if (cursorY > 40 || cursorX < 230) {
+				event.preventDefault();
+			}
 		}
 	}
 }
 function touchMove(event) {
-	updateCursorPos(event.touches[0]);
-	moveCircle();
+	if ($('#myModal').hasClass('in')) {
+		return;
+	} else {
+		updateCursorPos(event.touches[0]);
+		moveCircle();
+	}
 }
 function touchEnd(event) {
 	if (menu.style.display !== "block") {
@@ -504,9 +508,13 @@ function touchEnd(event) {
 	}
 }
 function mouseDown(event) {
-	updateCursorPos(event);
-	selectCircle();
-	moveCircle();
+	if ($('#myModal').hasClass('in')) {
+		return;
+	} else {
+		updateCursorPos(event);
+		selectCircle();
+		moveCircle();
+	}
 }
 function mouseUp(event) {
 	selectedCircle = undefined;
@@ -514,8 +522,12 @@ function mouseUp(event) {
 	draw();
 }
 function mouseMove(event) {
-	updateCursorPos(event);
-	moveCircle();
+	if ($('#myModal').hasClass('in')) {
+		return;
+	} else {
+		updateCursorPos(event);
+		moveCircle();
+	}
 }
 function keyDown() {
 	s = "[";
@@ -562,4 +574,25 @@ function autoScroll() {
 		clearInterval(scroller.timer);
 		scroller.timer = null;
 	}
+}
+
+function goApps() {
+	var service = new tizen.ApplicationControl(
+			"http://tizen.org/appcontrol/operation/view",
+			"tizenstore://SellerApps/rz71xjklxj", null, null, null);
+	var id = "org.tizen.tizenstore";
+
+	try {
+		tizen.application.launchAppControl(service, id, function() {
+			console.log("Service launched");
+		}, function(err) {
+			alert("Service launch failed: " + " " + err.message);
+		}, null);
+	} catch (exc) {
+		alert("launchService exc: " + exc.message);
+	}
+}
+
+function exit() {
+	tizen.application.getCurrentApplication().exit();
 }

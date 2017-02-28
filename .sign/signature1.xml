@@ -4,23 +4,35 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="author-signature.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>g/jLIwiSsQhNqP4yjEulrUPWJRFuHeTK0Mq8bq0rDno=</DigestValue>
+<DigestValue>yfegxq2sIE00vAEE5+iiDKnpjACQH5Fa6ZW//DuPyps=</DigestValue>
 </Reference>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>DlfK3+xbCjrdjQJq6IxpSoFV8y0PP9BAflQi2yVVyAs=</DigestValue>
+<DigestValue>YX9ztReznd0yLLa6OCjSxaOMDfxGUh3ZOLfpBgf0daA=</DigestValue>
+</Reference>
+<Reference URI="css%2Fbootstrap.min.css">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>MfvZlkHCEqatNoGiOXveE8FIwMzZg4W85qfrfIFBfYc=</DigestValue>
 </Reference>
 <Reference URI="css%2Fstyle.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>Za5EivbpLAqsMQPNWl1An9RqLl4J5AiUSIPPfKuvLGU=</DigestValue>
+<DigestValue>u+eqWIkuhuKdVZF7VZAJc8kAEmSnKHlctbulf2OI4KI=</DigestValue>
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>6QEXTPxRIBUUN0T6bRcZqB5TolZcyS9ZHCpaZ8wfzQc=</DigestValue>
+<DigestValue>hfCsRrWl2p4jEjEJ7JarVq6xVsO3Ox6N2OB3DWnoaHE=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>ckHIdEl2C11qlWtfgH6cfy24XtNRZSa4N51UJJQO+Gc=</DigestValue>
+<DigestValue>VMNhfW4V+nQForQZXYO77nKqcAvzEAfGuIHQEUVgnJA=</DigestValue>
+</Reference>
+<Reference URI="js%2Fbootstrap.min.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc=</DigestValue>
+</Reference>
+<Reference URI="js%2Fjquery.min.js">
+<DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
+<DigestValue>rsPUGdUPBXgalvIj4YKJrrUlmLXbOb6Cp7cdxn1qeUc=</DigestValue>
 </Reference>
 <Reference URI="lazors.png">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -35,9 +47,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-nn39N5b+pkkf744GYJq6kzypWiq8HM0lwippry08TY2o59Y3xUrllGj8A6Nb/dXGd0Zx7GShkcPa
-cAsEbEY5Rzsg/8JFhlk2GSHW5MtLB3XBUOYX3hxiuL4vfAb3vWJByMOYklbN23b6zhfvNAPYjslp
-Yw8OFUyjjVsHia11ASU=
+LI5A/i7ZInzyOUnzN4Y9DWbCHSkC7kLW4mxDIjGCM/hF85Wdql/CvbxaNnsjrEpOLTItcZjaT2Yl
+p9XrkhpRG6lm80lWeRtlZ4YdYvnDULU7XsE6puxnWYVKRQ2B0J+ywLxDvFwjETF+zYruNtnqCPNw
+6wfEGGcdQh+IaIStMNk=
 </SignatureValue>
 <KeyInfo>
 <X509Data>

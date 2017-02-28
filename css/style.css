@@ -1,93 +1,115 @@
 * {
-				margin: 0px;
-				padding: 0px;
-				-webkit-tap-highlight-color: transparent;
-				-webkit-user-select: none;
-			}
-			body {
-				font-family: "Georgia";
-				text-align: center;
-				background-color: #412d2c;
-				min-height: 417px;
-			}
-			h1, h2 {
-				display: none;
-			}
-			#menu {
-				margin: auto;
-				width: 320px;
-				padding-bottom: 3px;
-			}
-			#menu h3 {
-				text-align: center;
-				margin: 14px 0px 6px;
-				font-size: 32px;
-				font-style: italic;
-				text-decoration: none;
-				text-shadow: 0px 1px 3px rgba(0,0,0,1);
-				color: white;
-			}
-			#menu div {
-				display: inline-block;
-				width: 50px;
-				text-align: center;
-				font-size: 30px;
-				padding: 5px 0px 8px;
-				margin: 3px 3px;
-				background: rgba(180,180,180,0.5);
-				background: rgba(50,50,50,0.5);
-				border: 2px solid rgba(0,0,0,0.3);
-				border-radius: 5px;
-				color: #fff;
-				-webkit-background-clip: padding-box;
-			}
-			#menuBtn {
-				text-decoration: none;
-				position: absolute;
-				top: 0px;
-				right: 0px;
-				padding: 6px 8px;
-				color: white;
-				font-size: 19px;
-				font-weight: bold;
-				text-shadow: 0px 1px 3px rgba(0,0,0,1);
-			}
-			@media screen and (min-device-width: 640px) {
-				body {
-					text-align: center;
-					background-color: #412d2c;
-				}
-				h1, h2, h2 a {
-					display: block;
-					margin: 14px 0px 6px;
-					font-style: italic;
-					text-decoration: none;
-					text-shadow: 0px 1px 3px rgba(0,0,0,1);
-					color: white;
-				}
-				h1 {
-					cursor: default;
-					font-size: 34px;
-				}
-				h2 {
-					cursor: pointer;
-					font-size: 21px;
-					position: fixed;
-					bottom: -6px;
-					right: 14px;
-				}
-				#menuBtn {
-					font-size: 28px;
-				}
-				canvas {
-					background-color: #201615;
-					
-					border: 1px solid rgba(0,0,0,0.1);
-					-moz-border-radius: 2px;
-					border-radius: 2px;
-					
-					-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.4), 0px 1px 1px rgba(255,255,255,0.1);
-					-moz-box-shadow: 	0px 0px 2px rgba(0,0,0,0.4), 0px 1px 1px rgba(255,255,255,0.1);
-					box-shadow:		    0px 0px 2px rgba(0,0,0,0.4), 0px 1px 1px rgba(255,255,255,0.1);
-				}
-			}
+	margin: 0px;
+	padding: 0px;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+}
+
+body {
+	font-family: "Georgia";
+	text-align: center;
+	background-color: #412d2c;
+	min-height: 417px;
+}
+
+.more-apps {
+	position: absolute;
+	width: 80%;
+	font-size: 20px;
+	bottom: 10px;
+	left: 10%;
+}
+
+#modal-window {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+h1, h2 {
+	display: none;
+}
+
+#menu {
+	margin: auto;
+	width: 320px;
+	padding-bottom: 3px;
+}
+
+#menu h3 {
+	text-align: center;
+	margin: 14px 0px 6px;
+	font-size: 32px;
+	font-style: italic;
+	text-decoration: none;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+	color: white;
+}
+
+#menu div {
+	display: inline-block;
+	width: 50px;
+	text-align: center;
+	font-size: 30px;
+	padding: 5px 0px 8px;
+	margin: 3px 3px;
+	background: rgba(180, 180, 180, 0.5);
+	background: rgba(50, 50, 50, 0.5);
+	border: 2px solid rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	color: #fff;
+	-webkit-background-clip: padding-box;
+}
+
+#menuBtn {
+	text-decoration: none;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 6px 8px;
+	color: white;
+	font-size: 19px;
+	font-weight: bold;
+	text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+
+@media screen and (min-device-width: 640px) {
+	body {
+		text-align: center;
+		background-color: #412d2c;
+	}
+	h1, h2, h2 a {
+		display: block;
+		margin: 14px 0px 6px;
+		font-style: italic;
+		text-decoration: none;
+		text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+		color: white;
+	}
+	h1 {
+		cursor: default;
+		font-size: 34px;
+	}
+	h2 {
+		cursor: pointer;
+		font-size: 21px;
+		position: fixed;
+		bottom: -6px;
+		right: 14px;
+	}
+	#menuBtn {
+		font-size: 28px;
+	}
+	canvas {
+		background-color: #201615;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		-webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4), 0px 1px 1px
+			rgba(255, 255, 255, 0.1);
+		-moz-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4), 0px 1px 1px
+			rgba(255, 255, 255, 0.1);
+		box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4), 0px 1px 1px
+			rgba(255, 255, 255, 0.1);
+	}
+}

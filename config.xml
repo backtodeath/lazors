@@ -6,6 +6,7 @@
     <feature name="http://tizen.org/feature/screen.size.all"/>
     <icon src="lazors.png" height="117" width="117"/>
     <name>Lazors</name>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
     <tizen:profile name="mobile"/>
     <tizen:setting screen-orientation="portrait" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="enable"/>
 </widget>
