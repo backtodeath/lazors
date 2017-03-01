@@ -4,7 +4,7 @@
 <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></SignatureMethod>
 <Reference URI="config.xml">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>YX9ztReznd0yLLa6OCjSxaOMDfxGUh3ZOLfpBgf0daA=</DigestValue>
+<DigestValue>JLsl9E8RwlOE9mUtcTDvp3ZWdgPliOzXtDbWODAlc5o=</DigestValue>
 </Reference>
 <Reference URI="css%2Fbootstrap.min.css">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -16,11 +16,11 @@
 </Reference>
 <Reference URI="index.html">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>hfCsRrWl2p4jEjEJ7JarVq6xVsO3Ox6N2OB3DWnoaHE=</DigestValue>
+<DigestValue>2gjFPGipzMYpVEGMxUatmpPPAbmsQQNiT1GzqtCigoM=</DigestValue>
 </Reference>
 <Reference URI="js%2Fapp.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
-<DigestValue>VMNhfW4V+nQForQZXYO77nKqcAvzEAfGuIHQEUVgnJA=</DigestValue>
+<DigestValue>Rs1JKWb9JdgYBwwE5SKffxvoNzUfJNRH3nC8Sx6e6CE=</DigestValue>
 </Reference>
 <Reference URI="js%2Fbootstrap.min.js">
 <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></DigestMethod>
@@ -43,9 +43,9 @@
 </Reference>
 </SignedInfo>
 <SignatureValue>
-MpncL9RC14iuVRM4FOxID8nuxGJc86e+XO9rh5uRJTGsTvwVir9IWdEs+zMQxqKLDFUl+BNHggCH
-w6Hy9l6tVfqQO+TJgjDZkMCHofZAE1JQtbG0/PFX7keU+mmvW2pwuK3rShpnLRxbLAJA6sGLsyWc
-t9u2vd0fXf5vZ/Vw7No=
+OBtRmqIbZfIQxNJ2MErtqGaz9xfPngshV/KJGkE9hSu4pNd4gB9QVEz5CAz7BGSSBmLW2v8MkiNj
+ebP1EXgRetrNe68HaP4W5WKuEVTKbcTyQn4VFQUZnANM2wugW7szHnaugux04TUt2w2DxxbPVHYe
+01MuS4McWP2RrUMtyog=
 </SignatureValue>
 <KeyInfo>
 <X509Data>
